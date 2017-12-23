@@ -1,0 +1,14 @@
+{
+  "name": "jksreader",
+  "version": "1.0.0",
+  "description": "JKS format decoder",
+  "main": "jks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-sha1": "^0.6.0"
+  }
+}

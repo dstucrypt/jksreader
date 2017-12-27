@@ -24,7 +24,7 @@ function STR(inst, len) {
 function readCert(_jks) {
     var type = STR(_jks, U16(_jks));
     var data = BIN(_jks, U32(_jks));
-    return {type, data};
+    return {type: type, data: data};
 }
 
 function readKey(_jks) {
@@ -41,7 +41,7 @@ function readKey(_jks) {
             certs.push(cert.data);
         }
     }
-    return {key: key_data, certs, name};
+    return {key: key_data, certs: certs, name: name};
 }
 
 
@@ -69,8 +69,8 @@ function parse(jks) {
     }
     return {
         format: 'jks',
-        material,
+        material: material,
     };
 }
 
-module.exports = {parse};
+module.exports = parse;

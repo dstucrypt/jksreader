@@ -48,6 +48,4 @@ function decode(buf, password) {
 
 }
 
-module.exports = {
-  decode,
-};
+module.exports = decode;
